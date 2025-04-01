@@ -3,6 +3,7 @@ import React from 'react'
 import Nav from './Component/Nav';
 import Content1 from './Component/Content1';
 import Contentt2 from './Component/Contentt2';
+import Whatwedo from './Component/Whatwedo';
 
 
 
@@ -31,6 +32,9 @@ function App() {
     </div>
     <div className='bg-green-500'>
       <Contentt2/>
+    </div>
+    <div className='bg-white'>
+      <Whatwedo/>
     </div>
     </>
   )

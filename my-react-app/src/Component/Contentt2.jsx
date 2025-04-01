@@ -20,7 +20,7 @@ const Content2 = () => {
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum, ad.</p>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum, ad</p>
         </div>
-        <div className='flex justify-between w-[70vw]'>
+        <div className='flex justify-between w-[70vw] mb-20'>
             {dataNumber.map((data,index)=>(
                 <div className={`flex flex-col items-center${index !== 0? "border-l-4 border-l-white":""}`}>
                 <p key={index} className='text-white text-8xl font-bold'>{data.number}</p>

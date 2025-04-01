@@ -1,2 +1,11 @@
 @import "tailwindcss";
-// $primary: #4f46e5;
+:root{
+    --primary-color:#22C55E;
+    --bg-white:#fdfefe;
+}
+.primary{
+    color: var(--primary-color);
+}
+.bg-white{
+    background-color: var(--bg-white);
+}
