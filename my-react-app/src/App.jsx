@@ -4,6 +4,7 @@ import Nav from "./Component/Nav";
 import Content1 from "./Component/Content1";
 import Contentt2 from "./Component/Contentt2";
 import Whatwedo from "./Component/Whatwedo";
+import Work from "./Component/Work";
 
 const Loader = () => {
   return (
@@ -19,7 +20,7 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setTimeout(() => setLoading(false), 3000);
+    setTimeout(() => setLoading(false), 2000);
   }, []);
   return loading ? (
     <Loader />
@@ -32,8 +33,11 @@ function App() {
       <div className="bg-green-500">
         <Contentt2 />
       </div>
-      <div className="bg-white w-[80vw]">
-        <Whatwedo />
+      <div className="bg-white">
+        {/* <Whatwedo /> */}
+      </div>
+      <div className="bg-black">
+        <Work/>
       </div>
     </>
   );

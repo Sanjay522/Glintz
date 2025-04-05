@@ -59,16 +59,16 @@ const Whatwedo = () => {
     },
   ];
   return (
-    <div className="w-[100vw]">
+    <div className="w-[100vw] overflow-hidden mb-25">
       <div className=" flex flex-col justify-center items-center text-center my-20">
         <h1 className="primary text-2xl">WHAT WE DO</h1>
         <p className="text-6xl my-2">We've got everything you need to</p>
         <p className="text-6xl">launch and grow your business</p>
         <div className="h-[0.5px] w-[40vw] bg-gray-500 my-[50px] opacity-30"></div>
       </div>
-      <div className="  flex flex-wrap items-center justify-center gap-20">
+      <div className="  flex flex-wrap items-center justify-center gap-10">
         {WData.map(({ image, title, paragraph }, index) => (
-          <div className="flex ">
+          <div className="flex w-[500px] gap-1 items-start max-w-full ">
             <img className="h-20 w-20" src={image} alt="icon" />
             <div key={index}>
               <h1 key={index} className="text-5xl font-bold ml-10">{title}</h1>
