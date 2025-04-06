@@ -23,7 +23,7 @@ const Nav = () => {
 
       {/* Menu */}
       {open && (
-        <ul className="fixed pt-10 right-0 top-0 bg-black cursor-pointer z-40 h-[90vh] w-[20vw] flex flex-col items-start pl-5 text-white">
+        <ul className="fixed pt-10 right-0 top-0 bg-black cursor-pointer z-40 h-[100vh] w-[20vw] flex flex-col items-start pl-5 text-white">
           {navbar.map((data, index) => (
             <li key={index} className="p-2">
               {data}

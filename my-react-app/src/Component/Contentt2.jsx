@@ -1,11 +1,16 @@
 import React from 'react'
+import CountUp from './CountUp'
 
 const Content2 = () => {
-    const dataNumber = [{number:"147",name:"Award Received"},
-        {number:"1505",name:"Cups of Coffee"},
-        {number : "109", name:"Project Completed"},
-        {number:"102",name:"Happy Clients"}
+
+
+    const dataNumber = [{number:147,name:"Award Received"},
+        {number:1505,name:"Cups of Coffee"},
+        {number : 109, name:"Project Completed"},
+        {number:102,name:"Happy Clients"}
     ]
+
+
   return (
     <div className='flex flex-col justify-center items-center'>
         <h1 className='text-3xl font-bold mt-20'>HELLO THERE</h1>
@@ -23,7 +28,7 @@ const Content2 = () => {
         <div className='flex justify-between w-[70vw] mb-20'>
             {dataNumber.map((data,index)=>(
                 <div className={`flex flex-col items-center${index !== 0? "border-l-4 border-l-white":""}`}>
-                <p key={index} className='text-white text-8xl font-bold'>{data.number}</p>
+                <p key={index} className='text-white text-8xl font-bold' counTo = "147"><CountUp end={data.number} duration={2000}/></p>
                 <p key={index} className='text-2xl font-bold mt-4'>{data.name}</p>
                 </div>
             ))
