@@ -5,6 +5,8 @@ import Content1 from "./Component/Content1";
 import Contentt2 from "./Component/Contentt2";
 import Whatwedo from "./Component/Whatwedo";
 import Work from "./Component/Work";
+import ImageGallary from "./Component/ImageGallary";
+import Client from "./Component/Client";
 
 const Loader = () => {
   return (
@@ -38,6 +40,12 @@ function App() {
       </div>
       <div className="bg-black">
         <Work/>
+      </div>
+      <div>
+        <ImageGallary/>
+      </div>
+      <div className="bg-gray-200">
+        <Client/>
       </div>
     </>
   );
