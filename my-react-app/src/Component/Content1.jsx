@@ -15,7 +15,7 @@ const Content1 = () => {
   ];
   const buttonName = ["START A PROJECT","MORE ABOUT US"]
   return (
-    <div className="w-[95vw] m-auto text-white">
+    <div className="w-[95vw] m-auto text-white relative">
       <div className="ml-54">
         <h1 className="text-[30px] mt-30 text-gray-500">Welcome to Glint</h1>
         <div className="flex flex-row justify-between items-center">

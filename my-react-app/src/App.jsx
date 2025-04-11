@@ -9,6 +9,7 @@ import ImageGallary from "./Component/ImageGallary";
 import Client from "./Component/Client";
 import Contact from "./Component/Contact";
 import Footer from "./Component/Footer";
+import bacgroundimg from "./assets/Logo/image.png"
 
 const Loader = () => {
   return (
@@ -30,7 +31,10 @@ function App() {
     <Loader />
   ) : (
     <>
-      <div className="bg-black w-full pb-30">
+      <div className="bg-black w-full pb-30 relative"
+      style={{ backgroundImage: `url(${bacgroundimg})` }}
+      >
+                    <div className='absolute inset-0 bg-black opacity-60'/>
         <Nav />
         <Content1 />
       </div>
