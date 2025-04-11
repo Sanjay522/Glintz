@@ -7,6 +7,7 @@ import Whatwedo from "./Component/Whatwedo";
 import Work from "./Component/Work";
 import ImageGallary from "./Component/ImageGallary";
 import Client from "./Component/Client";
+import Contact from "./Component/Contact";
 
 const Loader = () => {
   return (
@@ -46,6 +47,9 @@ function App() {
       </div>
       <div className="bg-gray-200">
         <Client/>
+      </div>
+      <div>
+        <Contact/>
       </div>
     </>
   );
