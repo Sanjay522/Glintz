@@ -8,6 +8,7 @@ import Work from "./Component/Work";
 import ImageGallary from "./Component/ImageGallary";
 import Client from "./Component/Client";
 import Contact from "./Component/Contact";
+import Footer from "./Component/Footer";
 
 const Loader = () => {
   return (
@@ -50,6 +51,9 @@ function App() {
       </div>
       <div>
         <Contact/>
+      </div>
+      <div className="bg-black">
+        <Footer/>
       </div>
     </>
   );
